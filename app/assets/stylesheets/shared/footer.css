@@ -1,0 +1,29 @@
+/*
+FOOTER
+================================================ */
+footer {
+    background: #2D3374;
+    color: rgba(255,255,255,.8);
+    padding: 3.5rem 1rem;
+    text-align: center;
+}
+footer .btn {
+    margin-bottom: 3.5rem;
+}
+.footer-nav li {
+    margin: 1rem 0;
+}
+.footer-nav a {
+    color: #d5d7e4;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav li {
+  margin: 0 .75rem;
+}
+.footer-nav a:hover {
+  color: #fff;
+}

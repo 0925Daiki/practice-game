@@ -1,0 +1,216 @@
+@charset 'UTF-8';
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+}
+body {
+	color: #555;
+	font-family: sans-serif;
+}
+
+/*
+COMMON
+================================================ */
+p,
+td {
+    line-height: 1.7;
+}
+
+/* Layout */
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+main {
+    max-width: 900px;
+    width: 94%;
+    margin: 6.25rem auto;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.text-center {
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    display: inline-block;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.375rem;
+    text-align: center;
+    width: 100%;
+}
+.btn-primary {
+    color: #fff;
+    background: #2d3374;
+}
+
+/* Heading */
+.title {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 10rem;
+    background: #d0bea2;
+    margin: 2rem 0 2.5rem;
+}
+.title-center {
+    text-align: center;
+}
+.title-center::after {
+    margin: 2.5rem auto;
+}
+
+/* Table */
+table {
+    margin: 3.5rem 0;
+    width: 100%;
+}
+th,
+td {
+    display: block;
+}
+th {
+    font-weight: normal;
+    background: #f8f6f2;
+    vertical-align: middle;
+    padding: 1rem;
+}
+td {
+    padding: .75rem 1rem 1.75rem;
+}
+
+/*
+HOME
+================================================ */
+.home-hero {
+    background-image: image-url('header_main.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 50vw auto;
+    padding: 5.5rem 1rem 3rem;
+}
+.home-hero h2 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    margin: 8vw 0 12vw;
+    background: rgba(255, 255, 255, 0.801);
+    padding: 1rem;
+    display: inline-block;
+}
+.home-hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* Contents */
+.brown-bg {
+
+}
+.home-text {
+    margin-bottom: 2rem;
+}
+
+/*
+DESKTOP SIZE
+================================================ */
+@media (min-width: 600px) {
+/* Common */
+    main {
+        padding: 5rem;
+    }
+    .btn {
+        width: auto;
+    }
+    .title {
+        font-size: 1.875rem;
+    }
+
+/* Table */
+    tr:nth-child(odd) {
+        background: #f8f6f2;
+    }
+    tr:nth-child(even) th {
+        background: #fff;
+    }
+
+    th,
+    td {
+        padding: 1.25rem;
+        display: table-cell;
+    }
+    th {
+        width: 24%;
+        vertical-align: middle;
+    }
+    td {
+        width: 76%;
+    }
+
+/* Header */
+    header .wrapper {
+        padding: 2rem 1rem;
+    }
+    .logo {
+        width: 12.5rem;
+    }
+    .main-nav li {
+        margin-left: 2rem;
+        font-family: 'Sawarabi Mincho', sans-serif;
+        font-size: 1.25rem;
+    }
+    .main-nav a {
+        width: auto;
+    }
+    .main-nav a:hover,
+    .main-nav .current {
+        border-bottom: 2px solid #2d3374;
+        padding-bottom: .5rem;
+        background: none;
+    }
+    .main-nav a::before {
+        content: '';
+    }
+
+/* Home */
+    .home-hero {
+        padding: 16vw 1rem;
+    }
+    .home-hero h2 {
+        font-size: 2.5rem;
+        margin: 0 0 2rem;
+        background: none;
+        padding: 0;
+    }
+    .home-hero p {
+        width: 38vw;
+    }
+
+    /* Contents */
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+    .home-text {
+        width: 50vw;
+        margin-bottom: 0;
+    }
+
+}

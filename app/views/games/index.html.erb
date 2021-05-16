@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<body>
+<%# ヘッダー部分 %>
+<%= render "shared/header" %>
+<div class="wrapper">
+<%# /ヘッダー部分 %>
+
+<%# 画面上部「試合募集一覧」部分%>
+<section class="home-hero wrapper">
+    <h2>高校野球 練習試合マッチ</h2>
+    <p>
+        普段から練習試合を組むことに苦労していませんか？
+        <br>このアプリでもっと楽にスケジューリングができるようにしましょう！
+    </p>
+    <a href="job.html" class="btn btn-primary">部活登録へ</a>
+</section>
+<%# /画面上部「試合募集一覧」部分%>
+
+<%# 画面中部「急募一覧」部分%>
+<section class="brown-bg">
+    <div class="wrapper content flex-reverse">
+        <div class="home-text">
+            <h2 class="title">急なキャンセルでも大丈夫！</h2>
+            <p>
+                「コロナの影響で明日の試合がキャンセルになった…」
+                <br>このアプリならそんな悩みもすぐに解決できます！
+                <br>急なキャンセルの時は、急募一覧ページへ
+            </p>
+            <a href="job.html" class="btn btn-primary">急募一覧をみる</a>
+        </div>
+    </div>
+</section>
+<%# /画面中部「急募一覧」部分 %>
+
+<%# 画面下部「募集一覧」部分 %>
+<section class="wrapper content">
+    <div class="home-text">
+        <h2 class="title">色んな高校と練習試合を組もう！</h2>
+        <p>
+            登録している高校同士でどんどん練習試合を組みましょう！
+            <br>色んな高校と試合をすることで、新しい発見も生まれるはず…。
+            <br>練習試合を募集している高校一覧は、下記のページへ
+        </p>
+        <a href="job.html" class="btn btn-primary">募集一覧をみる</a>
+    </div>
+</section>
+<%# /画面下部「募集一覧」部分 %>
+
+<%# フッター部分 %>
+<%= render "shared/footer" %>
+<%# /フッター部分 %>
+
+<!-- Chartist -->
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
