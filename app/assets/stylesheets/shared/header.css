@@ -1,46 +1,42 @@
-/*
-HEADER
-================================================ */
+* {
+  box-sizing: border-box;
+}
+
 header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2vh, 15vw;
 }
 .main-nav {
   display: flex;
+  
 }
 .main-nav li {
-  text-align: center;
-  font-size: .75rem;
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
 }
 .logo {
   width: 7.5rem;
 }
-.main-nav a {
-  display: block;
-  padding: .5rem;
-  width: 4rem;
+
+.menu-home {
+  text-decoration: none;
+  color: #333333;
+  line-height: 32px;
+  margin-right: 3vw;
 }
-.main-nav a::before {
-  display: block;
-  margin-bottom: .25rem;
-/* Font Awesome */
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
-  color: #555;
-  font-size: 1.25rem;
+.menu-login{
+  text-decoration: none;
+  color: #333333;
+  line-height: 32px;
+  margin-right: 3vw;
 }
-.menu-home::before {
-  content: '\f015';
-}
-.menu-login::before {
-  content: '\f00c';
-}
-.menu-sign-up::before {
-  content: '\f103';
+.menu-sign-up {
+  text-decoration: none;
+  color: #333333;
+  line-height: 32px;
+  margin-right: 3vw;
 }
 
-.main-nav .current {
-  background: #f8f6f2;
-}

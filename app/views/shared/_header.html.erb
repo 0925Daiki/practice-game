@@ -3,9 +3,9 @@
   <%= link_to image_tag("header_logo.png", class: "logo") %>
   <nav>
     <ul class="main-nav">
-      <li><%= link_to 'ホーム', "#", class: "current menu-home" %></li>
-      <li><%= link_to '新規登録', "#", class: "menu-sign-up" %></li>
-      <li><%= link_to 'ログイン', "#", class: "menu-login" %></li>
+      <li><%= link_to 'ホーム', root_path, class: "menu-home" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "menu-sign-up" %></li>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "menu-login" %></li>
     </ul>
   </nav>
 </div>
