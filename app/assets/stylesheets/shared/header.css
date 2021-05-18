@@ -34,6 +34,26 @@ header .wrapper {
   border-bottom: 2px solid #2d3374;
 }
 
+.user-school_name{
+  text-decoration: none;
+  margin-right: 2vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+.logout {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  text-decoration: none;
+  color: #333333;
+  border: solid 3px #364e96;
+  background-color: orange;
+  border-radius: 0.5em;
+  display: inline-block;
+  padding: 5px;
+}
+
 .menu-login{
   text-decoration: none;
   color: #333333;
