@@ -2,7 +2,7 @@ section{
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: orange;
+  background-color: yellow;
   background-blend-mode: darken;
 }
 
@@ -27,13 +27,21 @@ section{
 }
 
 .head-tittle{
-  font-size: 8vh;
-  color: white;
+  font-size: 10vh;
+  color: orange;
+  padding: 0.5em;
+  background: rgba(255,255,255,.9);
+  display: inline-block;
+  border: solid 3px #364e96;
+  border-radius: 0.5em;
 }
 
 .head-description{
+  font-weight: bold;
   font-size: 5vh;
-  color: bisque;
+  color: black;
+  background: rgba(255,255,255,.5);
+  
 }
 
 .home-center{
@@ -44,12 +52,18 @@ section{
 
 .center-tittle{
   font-size: 8vh;
-  color: white;
+  color: black;
+  padding: 0.5em;
+  background: rgba(255,255,255,.4);
+  display: inline-block;
+  border-left: solid 5px blue;
 }
 
 .center-description{
+  font-weight: bold;
   font-size: 5vh;
-  color: bisque;
+  color: white;
+  background: rgba(255,255,255,.2);
 }
 
 .home-bottom{
@@ -60,10 +74,17 @@ section{
 
 .bottom-tittle{
   font-size: 8vh;
-  color: white;
+  color: black;
+  padding: 0.5em;
+  background: rgba(255,255,255,.4);
+  display: inline-block;
+  border-left: solid 5px blue;
 }
 
 .bottom-description{
+  font-weight: bold;
   font-size: 5vh;
-  color: bisque;
+  color: blue;
+  background: rgba(255,255,255,.2);
 }
+

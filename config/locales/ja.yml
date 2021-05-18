@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        teacher_name: お名前
+        school_name: 高校名
+      game:
+        text: テキスト
+        image: 画像
