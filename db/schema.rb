@@ -14,9 +14,8 @@ ActiveRecord::Schema.define(version: 2021_05_18_054447) do
 
   create_table "teams", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "area_id", null: false
-    t.integer "menmber_id", null: false
+    t.integer "member_id", null: false
     t.integer "team_level_id", null: false
-    t.integer "status_id", null: false
     t.text "profile"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

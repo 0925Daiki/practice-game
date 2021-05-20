@@ -43,13 +43,11 @@ belongs_to : team
 
 | Column        | Type       | Options                       |
 |---------------|------------|-------------------------------|
-| teacher_name  | references | null: false, foreign_key:true |
-| school_name   | references | null: false, foreign_key:true |
+| user          | references | null: false, foreign_key:true |
 | area_id       | integer    | null: false                   |
 | member_id     | integer    | null: false                   |
 | team_level_id | integer    | null: false                   |
-| status_id     | integer    | null: false                   |
-| profile        | text      |                              |
+| profile       | text       |                               |
 
 ## アソシエーション
 has_one : user

@@ -4,6 +4,8 @@ ja:
       user:
         teacher_name: お名前
         school_name: 高校名
-      game:
-        text: テキスト
-        image: 画像
+      team:
+        area_id: 都道府県
+        member_id: 部員数
+        team_level_id: チームのレベル
+        profile: 自己紹介

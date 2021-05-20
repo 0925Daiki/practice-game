@@ -2,3 +2,50 @@
   box-sizing: border-box;
 }
 
+.team-group{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.teacher-school-name{
+
+}
+
+.team-text-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.team-text{
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  resize: none;
+}
+
+.select-box{
+  margin: 2vh 0;
+  padding: 10px;
+}
+
+.team-skyblue-btn{
+  font-size: 1.5rem;
+  background-color: skyblue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+
+.back-btn{
+
+}
+
+.team-info{
+
+}
