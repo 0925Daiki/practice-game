@@ -19,7 +19,22 @@ header .wrapper {
 }
 
 .logo {
+  animation: logo 3s infinite ease-in-out .8s alternate;
+  display: inline-block;
   width: 7.5rem;
+  transition: 1.5s ease-in-out;
+}
+
+@keyframes logo {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
 }
 
 .menu-home {

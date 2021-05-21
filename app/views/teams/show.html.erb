@@ -1,0 +1,12 @@
+<%# ヘッダー部分 %>
+<%= render "shared/header" %>
+<%# /ヘッダー部分 %>
+<div>
+  <% @team.each do |t|%>
+    <p><%= current_user.school_name %></p>
+  <% end %>
+</div>
+
+<%# フッター部分 %>
+<%= render "shared/footer" %>
+<%# /フッター部分 %>

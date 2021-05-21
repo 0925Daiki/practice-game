@@ -2,6 +2,7 @@ class TeamsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new, :create]
 
   def index
+    @team = Team.all
   end
 
   def new
@@ -18,6 +19,7 @@ class TeamsController < ApplicationController
   end
 
   def show
+    @team = Team.where(params[:id])
   end
 
   private
