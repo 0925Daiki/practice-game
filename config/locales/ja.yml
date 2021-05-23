@@ -9,3 +9,8 @@ ja:
         member_id: 部員数
         team_level_id: チームのレベル
         profile: 自己紹介
+      game:
+        recruit_id: 募集
+        place_id: 試合の場所
+        battle_level_id: 求める対戦相手のレベル
+        comment: コメント

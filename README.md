@@ -37,6 +37,7 @@
 
 ## アソシエーション
 belongs_to : team
+has_many : games
 
 
 ## teams table
@@ -56,15 +57,17 @@ has_many : messages
 
 ## games table
 
-| Column          | Type       | Options     |
-|-----------------|------------|-------------|
-| place_id        | integer    | null: false |
-| comment         | string     | null: false |
-| team_level_id   | references | null: false |
-| battle_level_id | integer    | null: false |
+| Column          | Type       | Options                       |
+|-----------------|------------|-------------------------------|
+| recruit_id      | integer    | null: false                   |
+| place_id        | integer    | null: false                   |
+| comment         | string     | null: false                   |
+| battle_level_id | integer    | null: false                   |
+| user            | references | null: false, foreign_key:true |
 
 ## アソシエーション
 belongs_to : team
+belongs_to : user
 has_many : messages
 
 ## messages table
