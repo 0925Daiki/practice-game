@@ -38,6 +38,7 @@
 ## アソシエーション
 belongs_to : team
 has_many : games
+has_many : messages
 
 
 ## teams table
@@ -52,7 +53,6 @@ has_many : games
 
 ## アソシエーション
 has_one : user
-has_many : games
 has_many : messages
 
 ## games table
@@ -66,17 +66,15 @@ has_many : messages
 | user            | references | null: false, foreign_key:true |
 
 ## アソシエーション
-belongs_to : team
 belongs_to : user
-has_many : messages
 
 ## messages table
 
 | Column      | Type       | Options     |
 |-------------|------------|-------------|
 | messages    | integer    | null: false |
-| school_name | references | null: false |
+| user        | references | null: false |
 
 ## アソシエーション
 belongs_to : team
-belongs_to : game
+belongs_to : user
