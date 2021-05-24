@@ -19,7 +19,7 @@ class TeamsController < ApplicationController
   end
 
   def show
-    @team = Team.where(params[:id])
+    @team = Team.find(params[:id])
   end
 
   private

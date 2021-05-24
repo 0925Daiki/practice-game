@@ -2,7 +2,7 @@
 <%= render "shared/header" %>
 <%# /ヘッダー部分 %>
 
-    <%# 画面上部「試合募集一覧」部分%>
+    <%# 画面上部「登録・申し込み一覧」部分%>
 <div class="wrapper">
     <section class="home-top">
         <h1 class="head-tittle">高校野球 練習試合マッチ</h1>
@@ -13,23 +13,23 @@
         <%= link_to '部活登録へ', new_team_path, class: "btn btn-teams" %>
         <%= link_to '練習試合申し込み', new_game_path, class: "btn btn-practice" %>
     </section>
-    <%# /画面上部「試合募集一覧」部分%>
+    <%# /画面上部「登録・申し込み一覧」部分%>
 
-    <%# 画面中部「急募一覧」部分%>
+    <%# 画面中部「募集一覧」部分%>
     <section class="home-center">
         <div class="home-text">
             <h2 class="center-tittle">急なキャンセルでも大丈夫！</h2>
             <p class="center-description">
                 「コロナの影響で明日の試合がキャンセルになった…」
                 <br>このアプリならそんな悩みもすぐに解決できます！
-                <br>急なキャンセルの時は、急募一覧ページへ
+                <br>急なキャンセルの時は、募集一覧ページへ
             </p>
-            <a href="help-recruit" class="btn btn-primary">急募一覧をみる</a>
+            <a href="help-recruit" class="btn btn-primary">募集一覧をみる</a>
         </div>
     </section>
-    <%# /画面中部「急募一覧」部分 %>
+    <%# /画面中部「募集一覧」部分 %>
 
-    <%# 画面下部「募集一覧」部分 %>
+    <%# 画面下部「登録している高校一覧」部分 %>
     <section class="home-bottom">
         <div class="home-text">
             <h2 class="bottom-tittle">色んな高校と練習試合を組もう！</h2>
@@ -38,12 +38,16 @@
                 <br>色んな高校と試合をすることで、新しい発見も生まれるはず…。
                 <br>登録している高校一覧は、下記のページへ
             </p>
-            <a href="registration" class="btn btn-primary">登録高校一覧を見る</a>
+            <%= link_to '登録高校一覧をみる', team_path(@team.ids), class: "btn btn-primary" %>
         </div>
     </section>
+
+    <%# /画面下部「登録している高校一覧」部分 %>
+
     <%# フッター部分 %>
     <%= render "shared/footer" %>
     <%# /フッター部分 %>
 </div>
+
 
 

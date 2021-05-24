@@ -45,7 +45,7 @@
     <div class='team-text-wrap'>
       <label class="team-text">コメント</label>
     </div>
-    <%= f.text_area :comment, class:"team-text", id:"team-info", placeholder:"例) 日時：○月○日、12時以降にグラウンドが空きます！よろしくおねがします。" ,rows:"7" ,maxlength:"1000" %>
+    <%= f.text_area :comment, class:"team-text", id:"team-info", placeholder:"例) 日時：○月○日、12時以降にグラウンドが空きます！   例）明日、急にキャンセルになりました。" ,rows:"7" ,maxlength:"1000" %>
     <p class='info-text'>※日時・場所の詳細などを記入してください</p>
   </div>
   
@@ -53,7 +53,7 @@
     <%= f.submit "申込完了！" ,class:"team-skyblue-btn" %>
     <%=link_to 'もどる', root_path, class:"back-btn" %>
   </div>
-  <p class='team-info'>連絡を待ちましょう！</p>
+  <p class='team-info'>一覧ページでメッセージのやり取りをしましょう！</p>
 </div>
 <% end %>
 
