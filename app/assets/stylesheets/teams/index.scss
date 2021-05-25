@@ -40,7 +40,7 @@ section{
   margin-left: 30px;
 }
 
-/* Images*/
+/* TOP-PAGE*/
 
 .home-top{
   background-image: image-url('header_main.png');
@@ -110,39 +110,86 @@ section{
   background: rgba(255,255,255,.2);
 }
 
+/* チーム一覧 */
+.team-page{
+  background-image: image-url('team-page.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.team-tittle{
+  font-size: 5vh;
+  font-style: italic;
+  color: #fff;
+}
+
+.team-lists{
+  list-style: none;
+  font-size: 4vh;
+  padding: 0;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-list{
+  border-style: none;
+  color: snow;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.list :hover{
+  color: red;
+}
+
+
 /* タブレット対応 */
 @media (max-width: 1024px) {
-  .inner {
+  .wrapper {
     width: 90%;
     margin: 0 auto;
   }
   .page-heading {
-    font-size: 24px;
+    font-size: 15px;
   }
-  .card {
-    width: 48%;
-    margin-bottom: 40px;
-  }
-  .prototype_image{
-    width: 60%;
-  }
+
 }
 
  /* スマホ表示 */
 @media (max-width: 599px) {
   .logo {
-    width: 120px;
+    width: 70px;
   }
   .page-heading {
     font-size: 20px;
   }
-  .card {
+  
+  .home-top{
     width: 100%;
     margin-bottom: 60px;
   }
-  .card__title {
+  
+  .head-title{
+    font-size: 20px;
+  }
+
+
+  .home-center {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  
+  
+  .home-text {
     font-size: 18px;
   }
+
+
   .card__summary {
     font-size: 14px;
   }

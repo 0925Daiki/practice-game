@@ -1,20 +1,5 @@
 <%= render "shared/header" %>
 
-<div class='item-contents'>
-  <h2 class='title'>登録高校一覧</h2>
-  <ul class='item-lists'>
-    <% if @team[0] != nil %>
-    <% @team.each do |team|%>
-    <li class='list'>
-      <div class='item-info'>
-        <h3 class='item-name'>
-          <%= team.user.school_name %>
-        </h3>
-      </div>
-    </li>
-    <% end %>
-    <% end %>
-  </h2>
-</div>
+
 
 <%= render "shared/footer" %>

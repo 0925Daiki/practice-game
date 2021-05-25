@@ -1,5 +1,7 @@
 <%# ヘッダー部分 %>
+<header class="page-heading">
 <%= render "shared/header" %>
+</header>
 <%# /ヘッダー部分 %>
 
     <%# 画面上部「登録・申し込み一覧」部分%>
@@ -36,9 +38,23 @@
             <p class="bottom-description">
                 登録している高校同士でどんどん練習試合を組みましょう！
                 <br>色んな高校と試合をすることで、新しい発見も生まれるはず…。
-                <br>登録している高校一覧は、下記のページへ
+                <br>下記の学校名をクリックすると、学校詳細ページに移動します！
+                <br>メッセージのやりとりもできます。（ログインが必要です）
             </p>
-            <%= link_to '登録高校一覧をみる', team_path(@team.ids), class: "btn btn-primary" %>
+        </div>
+    </section>
+
+    <section class="team-page">
+        <div class='team-contents'>
+            <h2 class='team-tittle'>登録高校一覧(新着順)</h2>
+                <ul class='team-lists'>
+                    <% @team.each do |team|%>
+                    <li class='list'>
+                        <%= link_to team.user.school_name, team_path(@team.ids), class: "team-list" %>
+                    </li>
+                    <% end %>
+                </ul>
+            </h2>
         </div>
     </section>
 
