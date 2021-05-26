@@ -1,0 +1,41 @@
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: cornsilk;
+}
+
+.team_wrapper{
+  width: 100%;
+}
+
+.team_detail{
+  width: 100%;
+}
+
+.detail__title{
+  width: 100%;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid blue;
+}
+
+.detail__message{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.team_manage{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-team-edit{
+  display: flex;
+  justify-content: center;
+}

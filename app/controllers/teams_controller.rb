@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :new, :show]
+  before_action :authenticate_user!, only: [:create, :new, :show, :edit]
 
   def index
     @team = Team.all.order("id DESC")
@@ -20,6 +20,13 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+  end
+
+  def edit
+    @team = Team.find(params[:id])
+    if user_signed_in? && current_user.id != @team.user_id 
+      redirect_to action: :new
+    end
   end
 
   private

@@ -1,5 +1,54 @@
 <%= render "shared/header" %>
 
+<main class="main">
+  <div class="inner">
+    <div class="team_wrapper">
+      <p class="detail__title">高 校 名</p>
+      <p class="detail__message">
+        <%= @team.user.school_name %>
+      </p>
+      
+      <div class="team_detail">
+        <div class="team_detail">
+          <p class="detail__title">都 道 府 県</p>
+          <p class="detail__message">
+            <%= @team.area.name %>
+          </p>
+        </div>
+
+        <div class="team_detail">
+          <p class="detail__title">部 員 数</p>
+          <p class="detail__message">
+            <%= @team.member.name %>
+          </p>
+        </div>
+      </div>
+
+      <div class="team_detail">
+          <p class="detail__title">チームのレベル</p>
+          <p class="detail__message">
+            <%= @team.team_level.name %>
+          </p>
+        </div>
+      </div>
+
+      <div class="team_detail">
+          <p class="detail__title">自 己 紹 介</p>
+          <p class="detail__message">
+            <%= @team.profile %>
+          </p>
+        </div>
+      </div>
+
+      <% if user_signed_in? && current_user.id == @team.user_id %>
+        <div class="team_manage">
+          <%= link_to "編集する", edit_team_path(@team.id), class: "btn btn-team-edit" %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</main>
 
 
 <%= render "shared/footer" %>
