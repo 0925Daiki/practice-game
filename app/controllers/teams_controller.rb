@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
 
   def index
     @team = Team.all.order("id DESC")
+    @game = Game.all
   end
 
   def new

@@ -1,0 +1,25 @@
+<%= render "shared/header" %>
+
+<header>
+  
+</header>
+
+
+<main class="main">
+
+  <div class='form-wrap'>
+  <% @game.each do |game| %>
+    <article class="game-list">
+      <h2 class="teacher-school-name">
+      高校名：
+        <%= current_user.school_name %>
+      </h2>
+
+    </article>
+  <% end %>
+
+
+</main>
+
+
+<%= render "shared/footer" %>

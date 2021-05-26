@@ -1,6 +1,3 @@
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
 
 <%= render "shared/header" %>
 
@@ -27,12 +24,10 @@
     </h2>
   </div>
 
-
-    <!-- Compiled and minified CSS -->
   <div class="game-date">
     <div class='game-date-wrap'>
       <label class="game-date-text">日時</label>
-      <%= f.text_field :practice_date, required: true, class: 'datepicker' %>
+      <%= f.date_field :practice_date, class:"calender" %>
     </div>
   </div>
 

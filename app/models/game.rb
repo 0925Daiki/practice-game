@@ -2,6 +2,7 @@ class Game < ApplicationRecord
 
 belongs_to :user
 
+
 extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :recruit
   belongs_to :place
@@ -13,6 +14,7 @@ with_options numericality: { other_than: 1 } do
   validates :battle_level_id
 end
 
+validates :practice_date, presence: true
 validates :comment, presence: true
 
 
