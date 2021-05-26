@@ -132,13 +132,14 @@ section{
   font-size: 5vh;
   font-style: italic;
   color: #fff;
+  margin: 0 auto;
 }
 
 .team-lists{
   list-style: none;
   font-size: 4vh;
   padding: 0;
-  margin: 30px;
+  margin: 30 0 15 0;
   display: flex;
   justify-content: center;
 }
@@ -147,7 +148,7 @@ section{
   border-style: none;
   color: snow;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 10px 10px 10px;
 }
 
 .list :hover{
