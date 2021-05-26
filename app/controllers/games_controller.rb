@@ -24,7 +24,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:recruit_id, :place_id, :battle_level_id, :comment).merge(user_id: current_user.id)
+    params.require(:game).permit(:practice_date, :recruit_id, :place_id, :battle_level_id, :comment).merge(user_id: current_user.id)
   end
 
 

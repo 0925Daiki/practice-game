@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_05_23_053005) do
 
   create_table "games", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.date "practice_date", null: false
     t.integer "recruit_id", null: false
     t.integer "place_id", null: false
     t.integer "battle_level_id", null: false
