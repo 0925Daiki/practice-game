@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :new, :show, :edit]
+  before_action :authenticate_user!, only: [:create, :new, :edit]
 
   def index
     @team = Team.all.order("id DESC")

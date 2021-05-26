@@ -50,7 +50,7 @@
                 <ul class='team-lists'>
                     <% @team.each do |team|%>
                     <li class='list'>
-                        <%= link_to team.user.school_name, team_path(@team.ids), class: "team-list" %>
+                        <%= link_to team.user.school_name, team_path(team.id), class: "team-list" %>
                     </li>
                     <% end %>
                 </ul>
