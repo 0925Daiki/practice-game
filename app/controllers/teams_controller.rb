@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :new, :edit, :destroy]
+  before_action :authenticate_user!, only: [:create, :new, :show, :edit, :destroy]
   before_action :set_team, only: [:show, :edit, :destroy]
 
   def index
