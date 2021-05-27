@@ -3,11 +3,34 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   background-color: cornsilk;
+}
+
+.inner{
+  text-align: center;
 }
 
 .team_wrapper{
   width: 100%;
+}
+
+.team_manage{
+  margin: 20px 0 20px 0;
+}
+
+.btn-team{
+  margin: 0 10px 0 10px;
+  font-size: 1.0rem;
+  background-color: blue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+
+.btn-team:hover{
+  background-color: cornflowerblue;
 }
 
 .team_detail{
@@ -26,16 +49,6 @@
 
 .detail__message{
   font-size: 25px;
-  display: flex;
-  justify-content: center;
-}
-
-.team_manage{
-  display: flex;
-  justify-content: center;
-}
-
-.btn-team-edit{
   display: flex;
   justify-content: center;
 }

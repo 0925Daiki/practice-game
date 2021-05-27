@@ -47,17 +47,9 @@
   padding: 10px;
 }
 
-.game-date{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 60px;
-}
-
 .team-btn{
   width: 50%;
-  margin: 40% 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
   padding: 30px;
 }
 
@@ -75,7 +67,6 @@
 }
 
 .back-btn{
-  width: 100%;
   font-size: 1.5rem;
   background-color: skyblue;
   color: #fff;
@@ -83,11 +74,18 @@
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
-  margin: 10px 30px 10px 70px;
+  margin-left: 100px;
   padding: 20px;
 }
 
 .team-info{
   font-size: 25px;
   font-weight: bold;
+}
+
+.calender{
+  display: flex;
+  justify-content: center;
+  margin: 2vh auto;
+  padding: 10px;
 }
