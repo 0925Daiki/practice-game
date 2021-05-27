@@ -1,25 +1,20 @@
 <%= render "shared/header" %>
 
-<header>
-  
-</header>
 
-
-<main class="main">
-
-  <div class='form-wrap'>
+  <div class='game-wrap'>
+  <p class="game-head">練習試合募集一覧</p>
   <% @game.each do |game| %>
     <article class="game-list">
-      <h2 class="teacher-school-name">
-      高校名：
-        <%= current_user.school_name %>
+      <h2 class="game-school-name">
+        <%= game.user.school_name %>
       </h2>
-
+      <p>日時：<%= game.practice_date %></p>
+      <p>募集内容：<%= game.recruit.name %></p>
+      
+      <%= link_to "詳細ページへ", game_path(game.id), class: "btn-game-show" %>
     </article>
   <% end %>
-
-
-</main>
+  </div>
 
 
 <%= render "shared/footer" %>

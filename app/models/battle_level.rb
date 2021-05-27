@@ -2,7 +2,7 @@ class BattleLevel < ActiveHash::Base
   include ActiveHash::Associations
   has_many :games
   self.data = [
-    { id: 1, name: '---' },
+    { id: 1, name: '不問' },
     { id: 2, name: '1回戦レベル' },
     { id: 3, name: '3回戦レベル' },
     { id: 4, name: 'ベスト16レベル' },

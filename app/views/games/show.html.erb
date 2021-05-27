@@ -1,6 +1,17 @@
 <%= render "shared/header" %>
 
-
+<% if user_signed_in? %>
+<article class="">
+  <h2 class="game-school-name">
+      <%= @game.user.school_name %>
+    </h2>
+    <p>日時：<%= @game.practice_date %></p>
+    <p>募集内容：<%= @game.recruit.name %></p>
+    <p>場所：<%= @game.place.name %></p>
+    <p>求める対戦相手のレベル：<%= @game.battle_level.name %></p>
+    <p>コメント：<%= @game.comment %></p>
+</article>
+<% end %>
 
 
 <%= render "shared/footer" %>

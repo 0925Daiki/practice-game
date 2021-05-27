@@ -2,7 +2,8 @@ class GamesController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create, :new, :show]
 
   def index
-    @game = Game.all
+    @team = Team.all
+    @game = Game.all.order("id DESC")
   end
 
   def new
