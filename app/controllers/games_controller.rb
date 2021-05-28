@@ -21,6 +21,7 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @message = Message.all
   end
 
   private

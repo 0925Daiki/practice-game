@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_one :team
   has_many :games
+  has_many :messages
 
   validates :teacher_name, presence: true
   validates :school_name, presence: true

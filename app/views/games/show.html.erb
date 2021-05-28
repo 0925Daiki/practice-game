@@ -11,6 +11,25 @@
     <p>求める対戦相手のレベル：<%= @game.battle_level.name %></p>
     <p>コメント：<%= @game.comment %></p>
 </article>
+
+<div class="messages-area">
+  <h3>メッセージ</h3>
+  <%= form_with model: @message, url: game_messages_path(@game.id), local: true do |f| %>
+  <%= f.text_field :text %>
+  <%= f.submit '送信' %> 
+  <% end %> 
+</div>
+
+ <div id='messages'>
+ <% if user_signed_in? %>
+  <% @message.each do |message| %>
+    <p><%= message.text %></p> 
+  <% end %>
+  <%=link_to 'もどる', games_path, class:"back-show-btn" %>
+  <%# <%= link_to "削除", game_messages_path(@game.id), method: :delete, class:"btn-team" %>
+  <% end %>
+</div>
+
 <% end %>
 
 

@@ -73,7 +73,7 @@ belongs_to : user
 
 | Column      | Type       | Options     |
 |-------------|------------|-------------|
-| messages    | integer    | null: false |
+| messages    | text       | null: false |
 | user        | references | null: false |
 
 ## アソシエーション
