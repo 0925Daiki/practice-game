@@ -1,5 +1,5 @@
 # アプリケーション名
-「高校野球 練習試合マッチ！〜road to 甲子園〜」
+「高校野球 練習試合マッチ」
 
 # アプリケーション概要
 ## ペルソナ
@@ -15,7 +15,6 @@
  そのため、本アプリは、練習試合マッチングに特化したアプリとした。
 - 多くの部活が参加できる練習試合マッチングアプリはすでに存在しているが、他競技も含まれているので、登録者は多いが、日常で使用している指導者は少ないと感じた。
 - 競技を限定的にすることで、より競技性とマッチした内容に仕上げた。
-- 新型コロナウイルスの影響で急なキャンセルが激増した。急なキャンセル時に練習試合を組むのが大変なので、急募ページを強調した仕様にした。
 
 ## 課題解決
 - 慣習的に電話での連絡を重要視する指導者の意識を変え、効率的に練習試合のスケジューリングを行えるようになる。
@@ -53,7 +52,6 @@ has_many : messages
 
 ## アソシエーション
 has_one : user
-has_many : messages
 
 ## games table
 
@@ -68,6 +66,7 @@ has_many : messages
 
 ## アソシエーション
 belongs_to : user
+has_many : messages
 
 ## messages table
 
@@ -75,7 +74,8 @@ belongs_to : user
 |-------------|------------|-------------|
 | messages    | text       | null: false |
 | user        | references | null: false |
+| game        | references | null: false |
 
 ## アソシエーション
-belongs_to : team
+belongs_to : game
 belongs_to : user
