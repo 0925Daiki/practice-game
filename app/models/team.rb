@@ -13,5 +13,5 @@ class Team < ApplicationRecord
     validates :member_id
     validates :team_level_id
   end
-
+  
 end

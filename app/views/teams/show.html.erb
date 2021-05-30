@@ -3,11 +3,11 @@
 <main class="main">
   <div class="inner">
     <div class="team_wrapper">
-    <% if user_signed_in? && current_user.id == @team.user_id %>
-        <div class="team_manage">
-          <%= link_to "編集する", edit_team_path(@team.id), class: "btn-team" %>
-          <%= link_to "削除", team_path(@team.id), method: :delete, class:"btn-team" %>
-        </div>
+      <% if user_signed_in? && current_user.id == @team.user_id %>
+      <div class="team_manage">
+        <%= link_to "編集する", edit_team_path(@team.id), class: "btn-team" %>
+        <%= link_to "削除", team_path(@team.id), method: :delete, class:"btn-team" %>
+      </div>
       <% end %>
       <p class="detail__title">高 校 名</p>
       <p class="detail__message">

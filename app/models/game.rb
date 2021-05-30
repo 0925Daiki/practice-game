@@ -14,9 +14,10 @@ with_options numericality: { other_than: 1 } do
   validates :place_id
 end
 
+validates :practice_date,   presence: true
 validates :battle_level_id, presence: true
-validates :practice_date, presence: true
-validates :comment, presence: true
+validates :practice_date,   presence: true
+validates :comment,         presence: true
 
 
 end
