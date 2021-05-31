@@ -10,7 +10,10 @@
 
  <div id='messages'>
   <% @messages.reverse_each do |message| %>
-    <p><%= message.text %></p> 
+    <p><%= message.text %></p>
+    <div id='school'>
+    <%= message.user.school_name%>(<%= message.created_at.to_s(:datetime_jp)%>)
+    </div> 
   <% end %>
   <%=link_to 'もどる', games_path, class:"back-show-btn" %>
 </div>

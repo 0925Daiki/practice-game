@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new, :show, :edit, :destroy]
-  before_action :set_team, only: [:show, :edit, :destroy]
+  before_action :set_team, only: [:show, :edit, :update, :destroy]
 
   def index
     @team = Team.all.order("id DESC")
@@ -27,6 +27,14 @@ class TeamsController < ApplicationController
   def edit
     if user_signed_in? && current_user.id != @team.user_id 
       redirect_to action: :new
+    end
+  end
+
+  def update
+    if @team.update(team_params)
+      redirect_to action: :show
+    else
+      render :edit
     end
   end
 

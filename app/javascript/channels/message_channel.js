@@ -13,7 +13,9 @@ consumer.subscriptions.create("MessageChannel", {
     const html = `<p>${data.content.text}</p>`;
     const messages = document.getElementById('messages');
     const newMessage = document.getElementById('message_text');
+    const schoolName = document.getElementById('school')
     messages.insertAdjacentHTML('afterbegin', html);
     newMessage.value='';
+    schoolName.insertAdjacentHTML('afterend', html);
   }
 });

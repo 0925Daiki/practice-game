@@ -15,6 +15,12 @@
 <div class="">
   <%= link_to "メッセージへ", game_messages_path(@game.id), class: "btn-messages" %>
 </div>
+<% if user_signed_in? && current_user.id == @game.user_id %>
+  <div class="game_manage">
+    <%= link_to "編集する", edit_game_path(@game.id), class: "btn-game" %>
+    <%= link_to "削除", game_path(@game.id), method: :delete, class:"btn-game" %>
+  </div>
+<% end %>
 <% end %>
 
 
