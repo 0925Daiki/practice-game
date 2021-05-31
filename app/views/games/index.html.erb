@@ -8,7 +8,7 @@
       <h2 class="game-school-name">
         <%= game.user.school_name %>
       </h2>
-      <p>日時：<%= game.practice_date %></p>
+      <p>日時：<%= game.practice_date.strftime("%Y年%-m月%-d日") %></p>
       <p>募集内容：<%= game.recruit.name %></p>
       
       <%= link_to "詳細ページへ", game_path(game.id), class: "btn-game-show" %>

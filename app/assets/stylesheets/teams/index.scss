@@ -99,24 +99,20 @@ section{
 .home-bottom{
   background-image: image-url('IMG_0545.png');
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 3vh;
+}
+
+.search-text{
+  width: 100%;
+  text-align: center;
 }
 
 .bottom-tittle{
-  font-size: 8vh;
-  color: black;
-  padding: 0.5em;
-  background: rgba(255,255,255,.4);
-  display: inline-block;
-  border-left: solid 5px blue;
+  font-size: 7vh;
+  color: white;
+  font-weight: bold;
 }
 
-.bottom-description{
-  font-weight: bold;
-  font-size: 5vh;
-  color: #fff;
-  background: rgba(255,255,255,.2);
-}
 
 /* チーム一覧 */
 .team-page{

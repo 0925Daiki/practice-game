@@ -33,20 +33,18 @@
 
     <%# 画面下部「登録している高校一覧」部分 %>
     <section class="home-bottom">
-        <div class="home-text">
-            <h2 class="bottom-tittle">色んな高校と練習試合を組もう！</h2>
-            <p class="bottom-description">
-                登録している高校同士でどんどん練習試合を組みましょう！
-                <br>色んな高校と試合をすることで、新しい発見も生まれるはず…。
-                <br>下記の学校名をクリックすると、学校詳細ページに移動します！
-                <br>（ログインが必要です）
-            </p>
+        <div class="search-text">
+            <div class="bottom-tittle">地域検索をしよう！(調整中…)</div>
+            <%= render "shared/map" %>
+            
         </div>
     </section>
 
     <section class="team-page">
         <div class='team-contents'>
-            <h2 class='team-tittle'>登録高校一覧(新着順)</h2>
+            <h2 class='team-tittle'>登録高校一覧
+            <br>下記の学校名をクリックすると、学校詳細ページに移動します！
+            <br>（ログインが必要です）</h2>
                 <ul class='team-lists'>
                     <% @team.each do |team|%>
                     <li class='list'>
