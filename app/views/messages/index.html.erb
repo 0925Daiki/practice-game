@@ -1,0 +1,20 @@
+<%= render "shared/header" %>
+
+<div class="messages-area">
+  <h1>メッセージ</h1>
+  <%= form_with model: [@game, @message], url: game_messages_path(@game.id), local: true do |f| %>
+  <%= f.text_field :text %>
+  <%= f.submit '送信'%> 
+  <% end %> 
+</div>
+
+ <div id='messages'>
+  <% @messages.reverse_each do |message| %>
+    <p><%= message.text %></p> 
+  <% end %>
+  <%=link_to 'もどる', games_path, class:"back-show-btn" %>
+</div>
+
+
+
+<%= render "shared/footer" %>
