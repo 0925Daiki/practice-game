@@ -4,7 +4,7 @@
 </header>
 <%# /ヘッダー部分 %>
 
-    <%# 画面上部「登録・申し込み一覧」部分%>
+    <%# 「トップページ」部分%>
 <div class="wrapper">
     <section class="home-top">
         <h1 class="head-tittle">高校野球 練習試合マッチ</h1>
@@ -14,9 +14,9 @@
         </p>
         
     </section>
-    <%# /画面上部「登録・申し込み一覧」部分%>
+    <%# /「トップページ」部分%>
 
-    <%# 画面中部「募集一覧」部分%>
+    <%# 「登録・申し込み・募集一覧」部分%>
     <section class="home-center">
         <div class="home-text">
             <h2 class="center-tittle">急なキャンセルでも大丈夫！</h2>
@@ -30,17 +30,9 @@
             <%= link_to "募集一覧を見る", games_path, class: "btn btn-recruit" %>
         </div>
     </section>
-    <%# /画面中部「募集一覧」部分 %>
+    <%# /「登録・申し込み・募集一覧」部分 %>
 
-    <%# 画面下部「登録している高校一覧」部分 %>
-    <section class="home-bottom">
-        <div class="search-text">
-            <div class="bottom-tittle">地域検索をしよう！(調整中…)</div>
-            <%= render "shared/map" %>
-            
-        </div>
-    </section>
-
+    <%# 「登録している高校一覧」部分 %>
     <section class="team-page">
         <div class='team-contents'>
             <h2 class='team-tittle'>登録高校一覧
@@ -56,8 +48,16 @@
             </h2>
         </div>
     </section>
+    <%# /「登録している高校一覧」部分 %>
 
-    <%# /画面下部「登録している高校一覧」部分 %>
+    <%# 「日本地図検索機能」部分 %>
+    <section class="home-bottom">
+        <div class="search-text">
+            <div class="bottom-tittle">地域検索をしよう！(調整中…)</div>
+            <%= render "shared/map" %>
+        </div>
+    </section>
+    <%# /「日本地図検索機能」部分 %>
 
     <%# フッター部分 %>
     <%= render "shared/footer" %>
