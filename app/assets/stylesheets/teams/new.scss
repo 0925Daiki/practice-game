@@ -2,7 +2,8 @@
   width: 100%;
   min-width: 800px;
   height: 100%;
-  background-color: seashell;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, #ffc107 0, #ffc107 2px, #ffe9a7 0, #ffe9a7 50%);
   display: flex;
   justify-content: center;
 }
@@ -10,47 +11,57 @@
 .form-wrap{
   width: 100vh;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
-  font-size: 14px;
   display: flex;
   align-items: center;
   flex-direction: column;
   min-width: 500px;
+  padding-bottom: 70px;
+}
+
+.form-header-text{
+  font-size: 40px;
+}
+
+.school-name{
+  font-size: 30px;
 }
 
 .team-group{
   width: 100%;
-  height: 100%;
+  height: 50%;
   text-align: center;
-  font-size: 25px;
-}
-
-.teacher-school-name{
-  width: 100%;
-  height: 100%;
+  font-size: 15px;
 }
 
 .team-text-wrap{
   width: 100%;
+  margin-top: 20px;
 }
 
 .team-text{
   width: 70%;
-  padding: 20px;
-  margin: 20px;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 30px;
   resize: none;
+}
+
+.team-text-info{
+  width: 80%;
+  font-size: 15px;
+  border: 3px solid black;
 }
 
 .select-box{
   margin: 2vh 0;
   padding: 10px;
+  border: 3px solid black;
 }
 
 .team-btn{
   width: 50%;
-  margin: 20px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   padding: 30px;
+  
 }
 
 .team-skyblue-btn{
@@ -67,15 +78,15 @@
 }
 
 .back-btn{
-  font-size: 1.5rem;
-  background-color: skyblue;
+  font-size: 1.3rem;
+  background-color: silver;
   color: #fff;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 100px;
-  padding: 20px;
+  margin-left: 110px;
+  padding: 10px 20px 10px 20px;
 }
 
 .team-info{
@@ -88,4 +99,5 @@
   justify-content: center;
   margin: 2vh auto;
   padding: 10px;
+  border: 3px solid black;
 }

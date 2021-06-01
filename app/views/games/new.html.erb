@@ -3,24 +3,15 @@
 
 <%= form_with model: @game, class: 'team-main', local: true do |f| %>
 <div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      練習試合申し込み
-    </h1>
-  </div>
+  <h1 class='form-header-text'>
+    練習試合申し込み
+  </h1>
 
   <%= render 'shared/error_messages', model: f.object %>
 
   <div class="team-group">
-    <h2 class="teacher-school-name">
-    高校名：
+    <h2 class="school-name">
       <%= current_user.school_name %>
-    </h2>
-  </div>
-  <div class="team-group">
-    <h2 class="teacher-school-name">
-    顧問名：
-      <%= current_user.teacher_name %>
     </h2>
   </div>
 
@@ -53,15 +44,15 @@
     <div class='team-text-wrap'>
       <label class="team-text">コメント</label>
     </div>
-    <%= f.text_area :comment, class:"team-text", id:"team-info", placeholder:"例) 明日、急にキャンセルになりました。午前中にお願いします！" ,rows:"7" ,maxlength:"1000" %>
+    <%= f.text_area :comment, class:"team-text-info", id:"team-info", placeholder:"例) 明日、急にキャンセルになりました。午前中にお願いします！" ,rows:"7" ,maxlength:"1000" %>
     <p class='info-text'>※時間など詳細をお書きください（必須）</p>
   </div>
   
   <div class='team-btn'>
-    <%= f.submit "申込完了！" ,class:"team-skyblue-btn" %>
+    <%= f.submit "申し込みする" ,class:"team-skyblue-btn" %>
     <%=link_to 'もどる', root_path, class:"back-btn" %>
   </div>
-  <p class='team-info'>メッセージのやり取りをしましょう！</p>
+  <p class='team-info'>試合詳細ページにてメッセージのやり取りをしましょう！</p>
 </div>
 <% end %>
 

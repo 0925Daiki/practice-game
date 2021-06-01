@@ -3,8 +3,7 @@
   <%= link_to image_tag("header_logo.png", class: "logo") %>
   <% if user_signed_in? %>
   <div class="user-school_name">
-    ようこそ!!   
-      <%= link_to "#{current_user.school_name} 様", root_path, class: "user-school_name" %>
+      <%= link_to "#{current_user.school_name} 様", root_path, class: "user-name" %>
       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
   </div>
   <% end %>

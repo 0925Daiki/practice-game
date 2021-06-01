@@ -3,26 +3,15 @@
 
 <%= form_with model: @team, class: 'team-main', local: true do |f| %>
 <div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      部活登録
-    </h1>
-  </div>
+  <h1 class='form-header-text'>
+    部活登録
+  </h1>
 
   <%= render 'shared/error_messages', model: f.object %>
 
-  <div class="team-group">
-    <h2 class="teacher-school-name">
-    高校名：
-      <%= current_user.school_name %>
-    </h2>
-  </div>
-  <div class="team-group">
-    <h2 class="teacher-school-name">
-    顧問名：
-      <%= current_user.teacher_name %>
-    </h2>
-  </div>
+  <h2 class="school-name">
+    <%= current_user.school_name %> 
+  </h2>
 
   <div class="team-group">
     <div class='team-text-wrap'>
@@ -49,7 +38,7 @@
     <div class='team-text-wrap'>
       <label class="team-text">自己紹介</label>
     </div>
-    <%= f.text_area :profile, class:"team-text", id:"team-info", placeholder:"例) お互い成長できるチームと練習試合がしたいです！よろしくお願いします。" ,rows:"7" ,maxlength:"1000" %>
+    <%= f.text_area :profile, class:"team-text-info", id:"team-info", placeholder:"例) お互い成長できるチームと練習試合がしたいです！よろしくお願いします。" ,rows:"7" ,maxlength:"1000" %>
     <p class='info-text'>※7文字以上で入力してください(入力は任意です)</p>
   </div>
   

@@ -1,3 +1,13 @@
+/* --- Animation --- */
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/* --- Section --- */
 section{
   height: 100vh;
   background-size: cover;
@@ -54,6 +64,9 @@ section{
   background-image: image-url('header_main.png');
   text-align: center;
   padding-top: 10vh;
+  opacity: 0;
+  animation: fadeIn 2s linear;
+  animation-fill-mode: both;
 }
 
 .head-tittle{
@@ -71,8 +84,8 @@ section{
   font-size: 5vh;
   color: black;
   background: rgba(255,255,255,.5);
-  
 }
+
 
 .home-center{
   background-image: image-url('IMG_1655.png');
@@ -87,6 +100,9 @@ section{
   background: rgba(255,255,255,.4);
   display: inline-block;
   border-left: solid 5px blue;
+  opacity: 1;
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
 }
 
 .center-description{
@@ -129,13 +145,17 @@ section{
   font-style: italic;
   color: #fff;
   margin: 0 auto;
+  text-align: center;
+  opacity: 1;
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
 }
 
 .team-lists{
   list-style: none;
   font-size: 4vh;
   padding: 0;
-  margin: 30 0 15 0;
+  margin: 30 10 20 0;
   display: flex;
   justify-content: center;
 }
@@ -144,7 +164,7 @@ section{
   border-style: none;
   color: snow;
   text-decoration: none;
-  margin: 0 10px 10px 10px;
+  margin: 0 20px 10px 20px;
 }
 
 .list :hover{
