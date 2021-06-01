@@ -17,45 +17,33 @@ section{
 }
 
 /* Button */
-.btn-primary{
+.btn{
   font-size: 1.5rem;
-  background-color: blue;
   color: #fff;
   border-radius: 5px;
-  padding: 18px 32px;
+  padding: 20px 20px;
   text-decoration: none;
 }
-
-.btn-primary:hover{
-  background: cadetblue;
+.btn:hover{
+  background: rgb(248, 174, 122);
 }
 
 .btn-teams{
-  font: bold;
-  font-size: 1.5rem;
-  background-color: red;
-  color: #fff;
+  background-color: skyblue;
+  margin-right: 40px;
   border-radius: 5px;
-  padding: 18px 32px;
-  text-decoration: none;
-}
-
-.btn-teams:hover{
-  background: cadetblue;
 }
 
 .btn-practice{
-  font-size: 1.5rem;
-  background-color: steelblue;
-  color: white;
+  background-color: yellowgreen;
   border-radius: 5px;
-  padding: 18px 32px;
-  text-decoration: none;
-  margin-left: 30px;
+  margin-right: 40px;
 }
 
-.btn-practice:hover{
-  background: cadetblue;
+.btn-recruit{
+  background-color: rgb(252, 117, 117);
+  border-radius: 5px;
+  margin-right: 40px;
 }
 
 /* TOP-PAGE*/

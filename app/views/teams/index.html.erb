@@ -12,8 +12,7 @@
             普段から練習試合を組むことに苦労していませんか？
             <br>このアプリでもっと楽にスケジューリングができるようにしましょう！
         </p>
-        <%= link_to '部活登録へ', new_team_path, class: "btn btn-teams" %>
-        <%= link_to '練習試合申し込み', new_game_path, class: "btn btn-practice" %>
+        
     </section>
     <%# /画面上部「登録・申し込み一覧」部分%>
 
@@ -24,9 +23,11 @@
             <p class="center-description">
                 「コロナの影響で明日の試合がキャンセルになった…」
                 <br>このアプリならそんな悩みもすぐに解決できます！
-                <br>練習試合を募集している学校を探しましょう
+                <br>下記のメニューをクリックして、早速始めましょう！
             </p>
-            <%= link_to "募集一覧を見る", games_path, class: "btn btn-practice" %>
+            <%= link_to '部活登録へ', new_team_path, class: "btn btn-teams" %>
+            <%= link_to '練習試合申し込み', new_game_path, class: "btn btn-practice" %>
+            <%= link_to "募集一覧を見る", games_path, class: "btn btn-recruit" %>
         </div>
     </section>
     <%# /画面中部「募集一覧」部分 %>
