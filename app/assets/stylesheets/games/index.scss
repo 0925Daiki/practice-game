@@ -1,8 +1,7 @@
 .game-head{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .game-wrap{
@@ -28,15 +27,9 @@ article{
 }
 
 .game-lists{
+  font-size: 20px;
   margin-bottom: 30px;
 	list-style-type: none;
-}
-
-.game-date{
-  font-size: 20px;
-}
-
-.game-recruit{
   color: red;
 }
 

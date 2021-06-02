@@ -1,0 +1,91 @@
+.game-show{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: #fdd;
+  text-align: center;
+}
+
+.show-school-name{
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.game-show-lists{
+  list-style: none;
+  margin-bottom: 50px;
+  
+}
+
+.game-show-list{
+  font-size: 25px;
+  color: black;
+  border: solid 3px #2d8fdd;
+  margin-bottom: 3px;
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;
+}
+
+.message-btn{
+  margin-bottom: 30px;
+}
+
+.btn-messages{
+  width: 50%;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #eb6100;
+  border-radius: 100vh;
+}
+.btn-messages:hover{
+  color: #fff;
+  background: #f56500;
+}
+
+.game-manage-back{
+  font-size: 1.0rem;
+  background-color: silver;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+}
+.btn-game{
+  text-decoration: none;
+  color: black;
+}
+.btn-game:hover{
+  color: red;
+}
+
+.game-manage-edit{
+  text-decoration: none;
+  font-size: 1.0rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+}
+.btn-game-edit{
+  font-size: 20px;
+  color: red;
+  background-color: skyblue;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+}
+.btn-game-destroy{
+  font-size: 20px;
+  color: red;
+  background-color: skyblue;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
