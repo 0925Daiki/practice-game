@@ -1,0 +1,54 @@
+.game-head{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-wrap{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+article{
+  width: calc(100% / 1 - 30px);
+  background: #fdd;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.game-school-name{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.game-lists{
+  margin-bottom: 30px;
+	list-style-type: none;
+}
+
+.game-date{
+  font-size: 20px;
+}
+
+.game-recruit{
+  color: red;
+}
+
+.btn-game-show{
+  width: 50%;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #eb6100;
+  border-radius: 100vh;
+}
+.btn-game-show:hover{
+  color: #fff;
+  background: #f56500;
+}
