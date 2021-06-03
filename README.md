@@ -58,6 +58,7 @@ has_one : user
 | Column          | Type       | Options                       |
 |-----------------|------------|-------------------------------|
 | practice_date   | date       | null: false                   |
+| area_id         | integer    | null: false                   |
 | recruit_id      | integer    | null: false                   |
 | place_id        | integer    | null: false                   |
 | comment         | string     | null: false                   |
