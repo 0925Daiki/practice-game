@@ -2,50 +2,23 @@
 
 <main class="main">
   <div class="team_wrapper">
-    <% if user_signed_in? && current_user.id == @team.user_id %>
-    <div class="team_manage">
+    <div class="team_center">
+      <h2 class="team-introduction">高校紹介</h2>
+        <ul class="team-details">
+          <li class="team-detail">学校名 : <%= @team.user.school_name %></li>
+          <li class="team-detail">都道府県 : <%= @team.area.name %></li>
+          <li class="team-detail">部員数 : <%= @team.member.name %></li>
+          <li class="team-detail">チームのレベル : <%= @team.team_level.name %></li>
+          <li class="team-detail">自己紹介 : <%= @team.profile %></li>
+        </ul>
+    </div>
+    <div class="team-manage">
+      <%=link_to 'もどる', root_path, class:"btn-back-index" %>
+      <% if user_signed_in? && current_user.id == @team.user_id %>
       <%= link_to "編集する", edit_team_path(@team.id), class: "btn-team" %>
       <%= link_to "削除", team_path(@team.id), method: :delete, class:"btn-team" %>
     </div>
-    <% end %>
-  </div>
-
-  <div class="team_center">
-    <div class="team_detail">
-      <p class="detail__title">高校名</p>
-      <p class="detail__message">
-      <%= @team.user.school_name %>
-      </p>
-    </div>
-    
-    <div class="team_detail">
-      <p class="detail__title">都道府県</p>
-      <p class="detail__message">
-      <%= @team.area.name %>
-      </p>
-    </div>
-
-    <div class="team_detail">
-      <p class="detail__title">部員数</p>
-      <p class="detail__message">
-      <%= @team.member.name %>
-      </p>
-    </div>
-
-    <div class="team_detail">
-      <p class="detail__title">チームのレベル</p>
-      <p class="detail__message">
-      <%= @team.team_level.name %>
-      </p>
-    </div>
-
-    <div class="team_detail">
-      <p class="detail__title">自己紹介</p>
-      <p class="detail__message">
-      <%= @team.profile %>
-      </p>
-    </div>
-    <%=link_to 'もどる', root_path, class:"back-index" %>
+      <% end %>
   </div>
 </main>
 

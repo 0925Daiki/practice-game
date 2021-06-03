@@ -2,29 +2,29 @@
 
 <% if user_signed_in? %>
 <div class="game-show">
-  <h2 class="show-school-name">
-    <%= @game.user.school_name %>
-  </h2>
-  <ul class="game-show-lists">
-    <li class="game-show-list">日時：<%= @game.practice_date.strftime("%Y年%-m月%-d日")%></li>
-    <li class="game-show-list">募集内容：<%= @game.recruit.name %></li>
-    <li class="game-show-list">場所：<%= @game.place.name %></li>
-    <li class="game-show-list">求める対戦相手のレベル：<%= @game.battle_level.name %></li>
-    <li class="game-show-list"> コメント：<%= @game.comment %></li>
-  </ul>
-  <div class="message-btn">
-  <%= link_to "メッセージへ", game_messages_path(@game.id), class: "btn-messages" %>
+  <div class="game_wrapper">
+    <h2 class="show-school-name"><%= @game.user.school_name %></h2>
+      <ul class="game-show-lists">
+        <li class="game-show-list">日時：<%= @game.practice_date.strftime("%Y年%-m月%-d日")%></li>
+        <li class="game-show-list">募集内容：<%= @game.recruit.name %></li>
+        <li class="game-show-list">場所：<%= @game.place.name %></li>
+        <li class="game-show-list">求める対戦相手のレベル：<%= @game.battle_level.name %></li>
+        <li class="game-show-list"> コメント：<%= @game.comment %></li>
+      </ul>
+      <div class="message-btn">
+        <%= link_to "メッセージへ", game_messages_path(@game.id), class: "btn-messages" %>
+      </div>
+      <div class="game-manage-back">
+        <%= link_to "もどる", games_path(@game.id), class: "btn-game" %>
+      </div>
+      <div class="game-manage-edit">
+        <%if user_signed_in? && current_user.id == @game.user_id %>
+        <%= link_to "編集する", edit_game_path(@game.id), class: "btn-game-edit" %>
+        <%= link_to "削除", game_path(@game.id), method: :delete, class:"btn-game-destroy" %>
+      </div>
+      <% end %>
+      <% end %>
   </div>
-  <div class="game-manage-back">
-    <%= link_to "もどる", games_path(@game.id), class: "btn-game" %>
-  </div>
-  <%if user_signed_in? && current_user.id == @game.user_id %>
-  <div class="game-manage-edit">
-    <%= link_to "編集する", edit_game_path(@game.id), class: "btn-game-edit" %>
-    <%= link_to "削除", game_path(@game.id), method: :delete, class:"btn-game-destroy" %>
-  </div>
-  <% end %>
-  <% end %>
 </div>
 
 <%= render "shared/footer" %>
