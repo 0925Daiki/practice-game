@@ -1,6 +1,9 @@
 <header>
 <div class="wrapper">
+  <div class="logo-header">
   <%= link_to image_tag("header_logo.png", class: "logo") %>
+    <p class="header-tittle">練習試合<br>マッチングアプリ</p>
+  </div>
   <% if user_signed_in? %>
   <div class="user-school_name">
       <%= link_to "#{current_user.school_name} 様", root_path, class: "user-name" %>
@@ -13,4 +16,5 @@
       <li><%= link_to 'ログイン', new_user_session_path, class: "menu-login" %></li>
     </ul>
 </div>
+
 </header>

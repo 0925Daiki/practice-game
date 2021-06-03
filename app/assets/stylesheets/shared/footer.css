@@ -26,3 +26,10 @@ footer {
 .footer-nav a:hover {
   color: #fff;
 }
+
+@media (max-width: 599px) {
+  .footer {
+    width: 70%;
+  }
+
+}

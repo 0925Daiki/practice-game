@@ -47,6 +47,18 @@ header .wrapper {
   }
 }
 
+.logo-header{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header-tittle{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: coral;
+}
+
 .menu-home {
   font-weight: bold;
   text-decoration: none;
@@ -109,4 +121,29 @@ header .wrapper {
   font-size: 35px;
   color: orange;
   text-decoration: none;
+}
+
+@media (max-width: 599px) {
+  header .wrapper {
+    width: 80%;
+  }
+  .main-nav {
+    font-size: 20px;
+    
+  }
+  .logo {
+    width: 70%;
+    height: 70%;
+  }
+  .user-name{
+    font-size: 20px;
+  }
+  .logout {
+    width: 70%;
+  }
+  .header-tittle{
+    font-size: 80%;
+  }
+
+
 }

@@ -156,57 +156,24 @@ section{
   color: red;
 }
 
-
-/* タブレット対応 */
-@media (max-width: 1024px) {
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .page-heading {
-    font-size: 15px;
-  }
-
-}
-
  /* スマホ表示 */
 @media (max-width: 599px) {
-  .logo {
-    width: 70px;
-  }
-  .page-heading {
+  section{
+    width: 40%;
+    height: 90%;
     font-size: 20px;
   }
   
   .home-top{
-    width: 100%;
-    margin-bottom: 60px;
+    font-size: 20px;
   }
   
   .head-title{
     font-size: 20px;
   }
-
-
-  .home-center {
-    width: 100%;
-    margin-bottom: 60px;
-  }
-  
-  
   
   .home-text {
     font-size: 18px;
   }
 
-
-  .card__summary {
-    font-size: 14px;
-  }
-  .prototype_image{
-    width: 100%;
-  }
-  .table{
-    width: 100%;
-  }
 }
