@@ -65,4 +65,4 @@ gem 'rails-i18n'
 
 gem 'active_hash'
 
-
+gem 'ransack'

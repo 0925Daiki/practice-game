@@ -1,10 +1,12 @@
 class GamesController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create, :new, :show, :edit, :update, :destroy]
-  before_action :set_game, only:[:show, :edit, :update, :destroy]
+  before_action :set_game, only:[:show, :edit, :update, :destroy, :search]
 
   def index
     @team = Team.all
     @game = Game.all.order("id DESC")
+    @q = Game.ransack
+    @games = @q.result(distinct: true)
   end
 
   def new
@@ -43,6 +45,11 @@ class GamesController < ApplicationController
     redirect_to action: :index
   end
 
+  def search
+    @q = Game.ransack(search_params)
+    @games = @q.result(distinct: true)
+  end
+
   private
 
   def game_params
@@ -51,6 +58,10 @@ class GamesController < ApplicationController
 
   def set_game
     @game = Game.find(params[:id])
+  end
+
+  def search_params
+    params.require(:q).permit(:place_id_eq)
   end
 
 end
