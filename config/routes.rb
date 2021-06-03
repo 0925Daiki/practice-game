@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root to: "teams#index"
   resources :teams
   resources :games do
-    resources :messages, only:[:index, :create]
     get 'search', to:'games#search'
+    resources :messages, only:[:index, :create]
   end
 
 

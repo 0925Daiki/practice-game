@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+
+<h1 class="search-wrapper">検索結果</h1>
+<div class='game-wrap'>
+<% @games.each do |games| %>
+  <article class="game-list">
+    <div class="game-school-name">
+      <%= games.user.school_name %>
+    </div>
+    <ul class="game-lists">
+      <li><%= games.recruit.name %></li>
+    </ul>
+    <%= link_to "詳細ページへ", game_path(games.id), class: "btn-game-show" %>
+  </article>
+  <% end %>
+</div>
+<div class="game-search-back">
+<%= link_to "もどる", games_path(@game), class: "btn-search-game" %>
+</div>
+
+<%= render "shared/footer" %>

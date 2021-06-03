@@ -1,11 +1,11 @@
 class GamesController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create, :new, :show, :edit, :update, :destroy]
-  before_action :set_game, only:[:show, :edit, :update, :destroy, :search]
+  before_action :set_game, only:[:show, :edit, :update, :destroy]
 
   def index
     @team = Team.all
     @game = Game.all.order("id DESC")
-    @q = Game.ransack
+    @q = Team.ransack
     @games = @q.result(distinct: true)
   end
 
@@ -46,6 +46,7 @@ class GamesController < ApplicationController
   end
 
   def search
+    @game = Game.where(params[:game_id])
     @q = Game.ransack(search_params)
     @games = @q.result(distinct: true)
   end
@@ -53,7 +54,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:practice_date, :recruit_id, :place_id, :battle_level_id, :comment).merge(user_id: current_user.id)
+    params.require(:game).permit(:practice_date, :area_id, :recruit_id, :place_id, :battle_level_id, :comment).merge(user_id: current_user.id)
   end
 
   def set_game
@@ -61,7 +62,7 @@ class GamesController < ApplicationController
   end
 
   def search_params
-    params.require(:q).permit(:place_id_eq)
+    params.require(:q).permit(:area_id_eq)
   end
 
 end

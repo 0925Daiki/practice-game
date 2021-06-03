@@ -1,11 +1,11 @@
 class TeamsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new, :show, :edit, :destroy]
-  before_action :set_team, only: [:show, :edit, :update, :destroy, :search]
+  before_action :set_team, only: [:show, :edit, :update, :destroy]
 
   def index
     @team = Team.all.order("id DESC")
     @game = Game.all
-    @q = Team.ransack
+    @q = Team.ransack(search_params)
     @teams = @q.result(distinct: true)
   end
 
@@ -61,7 +61,8 @@ class TeamsController < ApplicationController
   end
 
   def search_params
-    params.require(:q).permit(:area_id_eq)
+    params.permit(:area_id_eq)
   end
+
 
 end

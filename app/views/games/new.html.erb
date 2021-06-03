@@ -24,6 +24,13 @@
 
   <div class="team-group">
     <div class='team-text-wrap'>
+      <label class="team-text">都道府県</label>
+    </div>
+    <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"team-area-select"}) %>
+  </div>
+
+  <div class="team-group">
+    <div class='team-text-wrap'>
       <label class="team-text">募集</label>
     </div>
     <%= f.collection_select(:recruit_id, Recruit.all, :id, :name, {}, {class:"select-box", id:"team-area-select"}) %>
