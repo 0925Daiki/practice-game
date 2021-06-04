@@ -14,6 +14,13 @@
   </article>
   <% end %>
 </div>
+<div class="game-nil">
+  <% if @games[0] == nil %>
+    <h3 class='games-name'>
+      一致する高校はありません！
+    </h3>
+  <% end %>
+</div>
 <div class="game-search-back">
 <%= link_to "もどる", games_path(@game), class: "btn-search-game" %>
 </div>

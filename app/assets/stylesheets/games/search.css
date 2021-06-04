@@ -24,3 +24,14 @@
 .btn-search-game:hover{
   color: red;
 }
+
+.game-nil{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.games-name{
+  font-size: 35px;
+  
+}
