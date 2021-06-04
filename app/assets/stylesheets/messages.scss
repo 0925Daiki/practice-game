@@ -3,7 +3,7 @@ h1{
 }
 #messages{
   padding: 20px 10px 0px 10px;
-  width: 80%;
+  width: 50%;
   margin: 15px auto;
   text-align: right;
   font-size: 14px;
@@ -78,10 +78,26 @@ h1{
 .message-area{
   text-align:center;
   background-color: snow;
- 
-
+  margin-bottom: 15px;
+  padding: 20px 10px 20px 10px;
 }
 .message-form{
   display: flex;
   justify-content: center;
+}
+
+.back-show-btn{
+  width: 5%;
+  display: grid;
+  font-size: 1.0rem;
+  background-color: silver;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-align: center;
 }
