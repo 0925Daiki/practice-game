@@ -1,10 +1,12 @@
 
 <%= render "shared/header" %>
 
+<% breadcrumb :teams_reg %>
+
 <%= form_with model: @team, class: 'team-main', local: true do |f| %>
 <div class='form-wrap'>
   <h1 class='form-header-text'>
-    部活登録
+    学校登録
   </h1>
 
   <%= render 'shared/error_messages', model: f.object %>

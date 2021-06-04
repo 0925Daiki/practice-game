@@ -1,6 +1,8 @@
 
 <%= render "shared/header" %>
 
+<% breadcrumb :games_reg %>
+
 <%= form_with model: @game, class: 'team-main', local: true do |f| %>
 <div class='form-wrap'>
   <h1 class='form-header-text'>

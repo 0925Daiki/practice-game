@@ -1,5 +1,7 @@
 <%= render "shared/header" %>
 
+<% breadcrumb :games_search %>
+
 <h1 class="search-wrapper">検索結果</h1>
 <div class='game-wrap'>
 <% @games.each do |games| %>

@@ -1,4 +1,7 @@
 <%= render "shared/header" %>
+
+<% breadcrumb :games_messages %>
+
 <h1>メッセージ</h1>
  <div id='messages'>
   <% @messages.reverse_each do |message| %>

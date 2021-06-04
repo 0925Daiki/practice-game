@@ -1,5 +1,7 @@
 <%= render "shared/header" %>
 
+<% breadcrumb :games_index %>
+
 <p class="game-head">練習試合募集一覧
 <div class="search-game">
   <%= search_form_for(@q, url: game_search_path(@game)) do |f| %>

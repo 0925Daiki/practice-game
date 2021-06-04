@@ -5,7 +5,7 @@ class GamesController < ApplicationController
   def index
     @team = Team.all
     @game = Game.all.order("id DESC")
-    @q = Team.ransack
+    @q = Game.ransack
     @games = @q.result(distinct: true)
   end
 
