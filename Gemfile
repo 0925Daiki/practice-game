@@ -70,3 +70,5 @@ gem 'ransack'
 gem 'jquery-rails'
 
 gem "gretel"
+
+gem 'bootstrap', '~> 4.1.1'

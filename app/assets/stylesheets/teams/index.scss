@@ -18,14 +18,12 @@ section{
 
 /* Button */
 .btn{
-  font-size: 1.5rem;
+  width: 20%;
+  height: 15%;
   color: #fff;
-  border-radius: 50%;
   padding: 20px 20px;
   text-decoration: none;
-}
-.btn:hover{
-  background: rgb(255, 76, 76);
+  margin: 100px 30px 0 30px;
 }
 
 .btn-teams{
@@ -58,6 +56,7 @@ section{
   font-size: 10vh;
   color: orange;
   padding: 0.5em;
+  margin-bottom: 100px;
   background: rgba(255,255,255,.9);
   display: inline-block;
   border: solid 3px #364e96;
@@ -82,6 +81,7 @@ section{
   font-size: 8vh;
   color: black;
   padding: 0.5em;
+  margin-bottom: 100px;
   background: rgba(255,255,255,.4);
   display: inline-block;
   border-left: solid 5px blue;
@@ -121,24 +121,34 @@ section{
   background-size: cover;
   background-repeat: no-repeat;
   background-color: yellow;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .team-tittle{
-  font-size: 5vh;
-  font-style: italic;
-  color: #fff;
-  margin: 0 auto;
-  text-align: center;
+  font-size: 8vh;
+  color: black;
+  padding: 0.5em;
+  margin: 50px 0 50px 0;
+  background: rgba(255,255,255,.4);
+  display: inline-block;
+  border-left: solid 5px red;
   opacity: 1;
   animation: fadeIn 3s linear;
   animation-fill-mode: both;
 }
 
+.team-description{
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  background: rgba(255,255,255,.2);
+  margin-bottom: 50px;
+}
+
 .team-lists{
   list-style: none;
   font-size: 4vh;
+  font-weight: bold;
   padding: 0;
   margin: 30 10 20 0;
   display: flex;
@@ -147,7 +157,7 @@ section{
 
 .team-list{
   border-style: none;
-  color: snow;
+  color: white;
   text-decoration: none;
   margin: 0 20px 10px 20px;
 }
