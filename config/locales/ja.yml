@@ -13,6 +13,7 @@ ja:
         team_level_id: チームのレベル
         profile: 自己紹介
       game:
+        area_id: 都道府県
         practice_date: 日時
         recruit_id: 募集
         place_id: 試合の場所
