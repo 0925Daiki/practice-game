@@ -1,31 +1,33 @@
 <%= render "shared/header" %>
 
 <% breadcrumb :games_index %>
-
-<p class="game-head">練習試合募集一覧
-<div class="search-game">
-  <%= search_form_for(@q, url: game_search_path(@game)) do |f| %>
-  <%= f.label :area_id %>検索
-  <%= f.collection_select(:area_id_eq, Area.all, :id, :name, include_blank: '指定なし', class:"search-box") %>
-  <%= f.submit %>
-  <% end %>
-</div>
-</p>
-<div class='game-wrap'>
-    
-  <% @game.each do |game| %>
-    <article class="game-list">
-      <div class="game-school-name">
-        <%= game.user.school_name %>
-      </div>
-      <ul class="game-lists">
-        <li><%= game.recruit.name %></li>
-      </ul>
-      <%= link_to "詳細ページへ", game_path(game.id), class: "btn-game-show" %>
-    </article>
-  <% end %>
-</div>
+<div class="game-body">
+  <div class="game-head">練習試合募集一覧
+    <div class="search-game">
+      <%= search_form_for(@q, url: game_search_path(@game)) do |f| %>
+      <div class="area-serch">都道府県検索</div>
+      <%= f.collection_select(:area_id_eq, Area.all, :id, :name, include_blank: '指定なし', class:"search-box") %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+  <div class='game-wrap'>
+      
+    <% @game.each do |game| %>
+      <article class="game-list">
+        <div class="game-school-name">
+          <%= game.user.school_name %>
+        </div>
+        <ul class="game-lists">
+          <li><%= game.recruit.name %></li>
+        </ul>
+        <%= link_to "詳細ページへ", game_path(game.id), class: "btn-game-show" %>
+      </article>
+    <% end %>
+  </div>
   <div class="show-index-back">
   <%=link_to 'もどる', root_path, class:"back-btn" %>
   </div>
+</div>
+
 <%= render "shared/footer" %>

@@ -1,3 +1,7 @@
+.game-body{
+  background-color: whitesmoke;
+}
+
 .game-head{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
@@ -11,11 +15,10 @@
   text-align: center;
   border-bottom: solid 2px black;
 }
-.search-box{
-  width: 200px;
-  margin: 2vh 0;
-  padding: 10px;
-  border: 3px solid black;
+.area-serch{
+  margin: 30px 0 10px 0;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .game-wrap{
@@ -62,6 +65,6 @@ article{
 
 .show-index-back{
   text-align: center;
-  margin-bottom: 30px;
-  
+  margin-bottom: 20px;
+  background-color: whitesmoke;
 }
