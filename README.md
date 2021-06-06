@@ -1,7 +1,27 @@
 # アプリケーション名
-「高校野球 練習試合マッチ」
+### 「高校野球 練習試合マッチ」
 
 # アプリケーション概要
+### このアプリは私が教師をしていて困ったことを解決するために作成したアプリケーションです。
+### アプリの目的を説明する前に、現在高校野球を指導している教員の現状をお伝えします。
+
+- 高校野球の指導者にとって、練習試合を組むのは非常に労力のいる仕事である。
+- 
+- 
+
+### 上記のことを解決するために、本アプリケーションを開発することにしました。
+### アプリケーションの目的は、次の3つに分けられます。
+
+- 高校野球の指導者にとって練習試合を組むのは非常に大変である。
+- 
+- 
+
+### 
+
+###
+
+###
+
 ## ペルソナ
 - 20代〜50代の高校野球指導者
 - 校内でも重要な役職を任され、日々忙しく仕事をしながら、情熱的に高校球児を指導している。日々の業務に追われ、練習試合を組む連絡をするのが、終業後や休日に行っている。
@@ -19,10 +39,31 @@
 ## 課題解決
 - 慣習的に電話での連絡を重要視する指導者の意識を変え、効率的に練習試合のスケジューリングを行えるようになる。
 
-# URL
-
+# App URL
+https://practice-game-35540.herokuapp.com/
 
 # テスト用アカウント(ログインに必要な情報・Basic認証ID/Pass)
+
+
+# 利用方法
+
+
+# 機能一覧
+
+
+# 課題解決
+| ユーザーストーリーから考える課題 | 課題解決 |
+|--------------------|----------|
+|               |    |
+|  |    |
+|        |    |
+|         |    |
+
+# 洗い出した要件
+
+
+# 今後実装予定の機能
+
 
 # データベース設計
 ## users table
@@ -34,7 +75,7 @@
 | teacher_name       | string   | null: false               |
 | school_name        | string   | null: false               |
 
-## アソシエーション
+### アソシエーション
 belongs_to : team
 has_many : games
 has_many : messages
@@ -50,7 +91,7 @@ has_many : messages
 | team_level_id | integer    | null: false                   |
 | profile       | text       |                               |
 
-## アソシエーション
+### アソシエーション
 has_one : user
 
 ## games table
@@ -65,7 +106,7 @@ has_one : user
 | battle_level_id | integer    | null: false                   |
 | user            | references | null: false, foreign_key:true |
 
-## アソシエーション
+### アソシエーション
 belongs_to : user
 has_many : messages
 
@@ -77,6 +118,16 @@ has_many : messages
 | user        | references | null: false |
 | game        | references | null: false |
 
-## アソシエーション
+### アソシエーション
 belongs_to : game
 belongs_to : user
+
+# 使用言語・技術
+- 
+- 
+- 
+- 
+- 
+- 
+
+# ローカルでの動作方法
