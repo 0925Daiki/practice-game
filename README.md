@@ -66,7 +66,7 @@ https://practice-game-35540.herokuapp.com/
 
 ### 練習試合申し込みボタンをクリック→試合募集投稿ページへ遷移し、投稿が可能
 
-[![Image from Gyazo](https://i.gyazo.com/dac954e747c699acef4a9ce299c5c189.gif)](https://gyazo.com/dac954e747c699acef4a9ce299c5c189)
+![dac954e747c699acef4a9ce299c5c189 (1)](https://user-images.githubusercontent.com/82555115/121152681-61f8da80-c880-11eb-9235-d5293de6e2c1.gif)
 
 
 ### 募集一覧ボタンをクリック→試合募集一覧ページへ遷移
