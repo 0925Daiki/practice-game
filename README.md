@@ -71,7 +71,7 @@ https://practice-game-35540.herokuapp.com/
 
 ### 募集一覧ボタンをクリック→試合募集一覧ページへ遷移
 
-[![Image from Gyazo](https://i.gyazo.com/9c600edbf43935293ee3ad14c1792e3d.gif)](https://gyazo.com/9c600edbf43935293ee3ad14c1792e3d)
+![9c600edbf43935293ee3ad14c1792e3d (1)](https://user-images.githubusercontent.com/82555115/121153136-c5830800-c880-11eb-9255-c8221db769ab.gif)
 
 
 ### 試合募集一覧ページで都道府県検索→一致する場合は一覧が表示、しない場合は「一致する高校はありません！」と表示
