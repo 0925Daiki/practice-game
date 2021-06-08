@@ -26,8 +26,13 @@
 # :globe_with_meridians: App URL
 https://practice-game-35540.herokuapp.com/
 
-# :unlock: テスト用アカウント(ログインに必要な情報・Basic認証ID/Pass)
+# :unlock: テスト用アカウント
+### ログインに必要な情報
+- 
 
+### Basic認証ID/Pass
+- 
+- 
 
 # :arrow_forward: 利用方法
 
@@ -53,11 +58,9 @@ https://practice-game-35540.herokuapp.com/
 | 試合をする相手のチームレベルがわからないという課題 | チーム詳細を閲覧することで、試合前に相手チームの情報を確認することができる |
 | 試合を組むときに必ず電話しなければならないという課題 | メッセージ機能で直接やり取りする事ができる |
 
-# :bulb: 洗い出した要件
-
-
 # :wrench: 今後実装予定の機能
-
+- Dockerを導入したアプリケーション運用
+- 日時が過ぎた試合が自動的に表示されないようにする機能
 
 # :computer: DB設計
 ## users table
@@ -117,11 +120,21 @@ belongs_to : game
 belongs_to : user
 
 # :earth_asia: 開発環境
-- 
-- 
-- 
-- 
-- 
-- 
+- VScode
+- Ruby 2.6.5
+- rails 6.0.0
+- HTML/CSS
+- JavaScript
+- Mysql2 0.4.4
+- bootstrap 4.1.1
+- Heroku
+- GitHub
 
 # :star: ローカルでの動作方法
+$ git clone https://github.com/0925Daiki/practice-game
+$ cd practice-game
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+ :point_right: http://localhost:3000
