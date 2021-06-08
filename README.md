@@ -54,7 +54,7 @@ https://practice-game-35540.herokuapp.com/
 
 [![Image from Gyazo](https://i.gyazo.com/6088107ab15348a2911c5691a8f30b26.jpg)](https://gyazo.com/6088107ab15348a2911c5691a8f30b26)
 
-[![Image from Gyazo](https://i.gyazo.com/c0ade527ba282dd401a214f029806cd9.gif)](https://gyazo.com/c0ade527ba282dd401a214f029806cd9)
+![c0ade527ba282dd401a214f029806cd9 (1)](https://user-images.githubusercontent.com/82555115/121151477-5d7ff200-c87f-11eb-9ce8-40c8d4c80c48.gif)
 
 
 ### 学校名をクリック→学校詳細ページに遷移
