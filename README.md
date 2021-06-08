@@ -27,12 +27,21 @@
 https://practice-game-35540.herokuapp.com/
 
 # :unlock: テスト用アカウント
-### ログインに必要な情報
-- 
+## ログインに必要な情報
+### テスト用アカウント①
+- 高校名:テスト高校
+- email:test@test
+- password:1234abc
+### テスト用アカウント②
+- 高校名:ドカベン高校
+- email:test.111@test
+- password:123abcd
+
+※ 検索機能の確認は「東京都」or「神奈川県」で検索してください
 
 ### Basic認証ID/Pass
-- 
-- 
+- BASIC_AUTH_USER=“endo”
+- BASIC_AUTH_PASSWORD=“0925”
 
 # :arrow_forward: 利用方法
 
@@ -131,10 +140,10 @@ belongs_to : user
 - GitHub
 
 # :star: ローカルでの動作方法
-$ git clone https://github.com/0925Daiki/practice-game
-$ cd practice-game
-$ bundle install
-$ rails db:create
-$ rails db:migrate
-$ rails s
- :point_right: http://localhost:3000
+- git clone https://github.com/0925Daiki/practice-game
+- cd practice-game
+- bundle install
+- rails db:create
+- rails db:migrate
+- rails s
+- :point_right: http://localhost:3000
