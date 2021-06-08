@@ -1,4 +1,5 @@
 # :sunny: 「高校野球 練習試合マッチ」 :sunny:
+[![Image from Gyazo](https://i.gyazo.com/ea6419a7415a8e9b2b36f3908b034a19.jpg)](https://gyazo.com/ea6419a7415a8e9b2b36f3908b034a19)
 
 # :baseball: アプリケーション概要
 このアプリは私が高校教員をしていて、特に困ったことを解決するために作成したアプリケーションである。
@@ -45,34 +46,39 @@ https://practice-game-35540.herokuapp.com/
 
 # :arrow_forward: 利用方法
 ### トップページ右上より新規登録・ログイン
-
+[![Image from Gyazo](https://i.gyazo.com/55d48c1ee00911365e25d3915daf2573.gif)](https://gyazo.com/55d48c1ee00911365e25d3915daf2573)
 
 ### 学校登録ボタンをクリック→登録後、トップページに学校名が表示
+[![Image from Gyazo](https://i.gyazo.com/6088107ab15348a2911c5691a8f30b26.jpg)](https://gyazo.com/6088107ab15348a2911c5691a8f30b26)
 
-
+[![Image from Gyazo](https://i.gyazo.com/c0ade527ba282dd401a214f029806cd9.gif)](https://gyazo.com/c0ade527ba282dd401a214f029806cd9)
 
 ### 学校名をクリック→学校詳細ページに遷移
+[![Image from Gyazo](https://i.gyazo.com/ecf7f62082a89da71119208b04995031.gif)](https://gyazo.com/ecf7f62082a89da71119208b04995031)
 
+※ ログインユーザーが詳細ページを開くと「編集」「削除」ができる。それ以外のユーザーが他校の詳細ページを開いても表示されない。
 
-
-### 練習試合申し込みボタンをクリック→試合募集投稿ページへ遷移
-
+### 練習試合申し込みボタンをクリック→試合募集投稿ページへ遷移し、投稿が可能
+[![Image from Gyazo](https://i.gyazo.com/dac954e747c699acef4a9ce299c5c189.gif)](https://gyazo.com/dac954e747c699acef4a9ce299c5c189)
 
 ### 募集一覧ボタンをクリック→試合募集一覧ページへ遷移
-
+[![Image from Gyazo](https://i.gyazo.com/9c600edbf43935293ee3ad14c1792e3d.gif)](https://gyazo.com/9c600edbf43935293ee3ad14c1792e3d)
 
 ### 試合募集一覧ページで都道府県検索→一致する場合は一覧が表示、しない場合は「一致する高校はありません！」と表示
+[![Image from Gyazo](https://i.gyazo.com/697c1fa88d680b337324af2cf5f83937.gif)](https://gyazo.com/697c1fa88d680b337324af2cf5f83937)
 
+### 募集一覧ページの詳細ページへボタンをクリック→試合の詳細ページへ遷移
+[![Image from Gyazo](https://i.gyazo.com/f60ebb9654e9e8471200863183278604.gif)](https://gyazo.com/f60ebb9654e9e8471200863183278604)
 
-### 募集一覧ページの詳細へボタンをクリック→試合の詳細ページへ遷移
-
+※ ログインユーザーが詳細ページを開くと「編集」「削除」ができる。それ以外のユーザーが他校の詳細ページを開いても表示されない。
 
 ### 試合詳細ページからメッセージへボタンをクリック→メッセージ投稿機能へ遷移
-
+[![Image from Gyazo](https://i.gyazo.com/9824d2993abc60d12978c745befa0e94.gif)](https://gyazo.com/9824d2993abc60d12978c745befa0e94)
 
 ### メッセージを送信すると非同期通信で投稿内容がLINEチャット風に出る
+[![Image from Gyazo](https://i.gyazo.com/9e012ea0214b45a5a33c41e891976d23.gif)](https://gyazo.com/9e012ea0214b45a5a33c41e891976d23)
 
-
+※ 現在、送信するとメッセージのみが表示され、リロードするとLINE風の表示になる。修正次第、動画を変更する。
 
 # :black_nib: 機能一覧
 | 機能               | 概要                                    |
