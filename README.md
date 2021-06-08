@@ -121,6 +121,9 @@ https://practice-game-35540.herokuapp.com/
 - 日時が過ぎた試合が自動的に表示されないようにする機能
 
 # :computer: DB設計
+## ER図
+<img width="893" alt="スクリーンショット 2021-06-08 18 12 32" src="https://user-images.githubusercontent.com/82555115/121158285-35938d00-c885-11eb-92f7-a8099cd1063d.png">
+
 ## users table
 
 | Column             | Type     | Options                   |
@@ -169,7 +172,7 @@ https://practice-game-35540.herokuapp.com/
 
 | Column      | Type       | Options     |
 |-------------|------------|-------------|
-| messages    | text       | null: false |
+| text        | text       | null: false |
 | user        | references | null: false |
 | game        | references | null: false |
 
