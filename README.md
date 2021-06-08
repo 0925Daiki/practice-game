@@ -45,9 +45,9 @@ https://practice-game-35540.herokuapp.com/
 - BASIC_AUTH_PASSWORD=“0925”
 
 # :arrow_forward: 利用方法
-### トップページ右上より新規登録・ログイン
+### トップページ右上より新規登録・ログイン→上部にログインユーザー高校名表示
 
-[![Image from Gyazo](https://i.gyazo.com/6c608cfb46f9663a11bcdf2bcbef5938.gif)](https://gyazo.com/6c608cfb46f9663a11bcdf2bcbef5938)
+[![Image from Gyazo](https://i.gyazo.com/d43060e680f5c32bfbf1dc33543445aa.jpg)](https://gyazo.com/d43060e680f5c32bfbf1dc33543445aa)
 
 
 ### 学校登録ボタンをクリック→登録後、トップページに学校名が表示
