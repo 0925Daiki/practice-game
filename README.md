@@ -46,7 +46,7 @@ https://practice-game-35540.herokuapp.com/
 
 # :arrow_forward: 利用方法
 ### トップページ右上より新規登録・ログイン
-[![Image from Gyazo](https://i.gyazo.com/55d48c1ee00911365e25d3915daf2573.gif)](https://gyazo.com/55d48c1ee00911365e25d3915daf2573)
+[![Image from Gyazo](https://i.gyazo.com/6c608cfb46f9663a11bcdf2bcbef5938.gif)](https://gyazo.com/6c608cfb46f9663a11bcdf2bcbef5938)
 
 ### 学校登録ボタンをクリック→登録後、トップページに学校名が表示
 [![Image from Gyazo](https://i.gyazo.com/6088107ab15348a2911c5691a8f30b26.jpg)](https://gyazo.com/6088107ab15348a2911c5691a8f30b26)
