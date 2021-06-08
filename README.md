@@ -59,7 +59,7 @@ https://practice-game-35540.herokuapp.com/
 
 ### 学校名をクリック→学校詳細ページに遷移
 
-[![Image from Gyazo](https://i.gyazo.com/ecf7f62082a89da71119208b04995031.gif)](https://gyazo.com/ecf7f62082a89da71119208b04995031)
+![ecf7f62082a89da71119208b04995031 (1)](https://user-images.githubusercontent.com/82555115/121152120-e565fc00-c87f-11eb-813e-1161a0e0debd.gif)
 
 ※ ログインユーザーが詳細ページを開くと「編集」「削除」ができる。それ以外のユーザーが他校の詳細ページを開いても表示されない。
 
