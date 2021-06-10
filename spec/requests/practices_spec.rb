@@ -1,10 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe "Practices", type: :request do
-  describe "GET /practices" do
-    it "works! (now write some real specs)" do
-      get practices_index_path
-      expect(response).to have_http_status(200)
+  before do
+    @team = FactoryBot.create(:team)
+  end
+
+  describe "GET #index" do
+    it "indexアクションにリクエストすると正常にレスポンスが返ってくる" do
     end
   end
 end
