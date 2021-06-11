@@ -40,8 +40,8 @@ https://practice-game-35540.herokuapp.com/
 ※ 検索機能の確認は「東京都」or「神奈川県」で検索してください
 
 ### Basic認証ID/Pass
-- BASIC_AUTH_USER=“endo”
-- BASIC_AUTH_PASSWORD=“0925”
+- BASIC_AUTH_USER     = “endo”
+- BASIC_AUTH_PASSWORD = “0925”
 
 # :arrow_forward: 利用方法
 ## トップページ右上より新規登録・ログイン→上部にログインユーザー高校名表示
